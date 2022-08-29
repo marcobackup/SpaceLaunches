@@ -1,0 +1,38 @@
+/*body {
+  background-image: url("../img/SpaceLaunchesBg.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+body {
+  background-color: black;
+}
+
+p {
+  color: white;
+}
+
+.missionTitle {
+  font-size: 80px;
+  font-family: "Abel";
+}
+
+.launchWindow {
+  font-size: 30px;
+  top: -45px;
+  font-family: "Abel";
+}
+
+.spacecraft {
+  color: white;
+  font-family: "Abel";
+}
+
+.title {
+  font-size: 30px;
+}
+
+tbody {
+  font-family: "Abel";
+}
