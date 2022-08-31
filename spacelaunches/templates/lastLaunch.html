@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.html' %}
+  <body>
+    <div class="container-grid">
+      <div class="element">
+        <div class="mission">
+          <div class="intestation">
+            <span class="missionTitle">{{ missionName }}</span>
+            <img
+              class="missionPatch"
+              src="https://discourse-data-fra.fra1.cdn.digitaloceanspaces.com/original/3X/b/f/bf5ea5d730622c5647fd79ac867d251be18f279d.png"
+              width="84px"
+              height="84px"
+            />
+          </div>
+          <span class="missionLaunchWindow">Launch window 15:30 - 17:30</span>
+        </div>
+      </div>
+      <div class="element">
+        <div class="timerSide">
+          <span class="date today">today, 16:18 (LT)</span><br />
+          <span class="timer">T - 00 : 22 : 43 : 12</span>
+        </div>
+      </div>
+      <div class="element">
+        <div class="details">
+          <span class="detailsTitle">SPACECRAFT</span>
+          <div class="detailsParams">
+            <table>
+              <tr>
+                <td>Name</td>
+                <td>Orion 002</td>
+              </tr>
+              <tr>
+                <td>Destination</td>
+                <td>Retrograde orbit around the Moon</td>
+              </tr>
+              <tr>
+                <td>Crew</td>
+                <td><i style="color: red" class="bi bi-x-lg"></i></td>
+              </tr>
+              <tr>
+                <td>Load capacity</td>
+                <td>15000kg</td>
+              </tr>
+              <tr>
+                <td>First flight</td>
+                <td>29 august 2022</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+        <!--
+        <img
+          src="{{ url_for('static', filename='img/rockets/falcon9.png') }}"
+          height="500px;"
+        />
+        -->
+      </div>
+    </div>
+
+    <footer>
+      <a href="mailto:marcosgro03@gmail.com">marcosgro03@gmail.com</a> -
+      SpaceLaunches 2022
+    </footer>
+  </body>
+</html>

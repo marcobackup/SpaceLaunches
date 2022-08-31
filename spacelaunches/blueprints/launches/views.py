@@ -1,7 +1,9 @@
 from flask import (
     Blueprint, 
-    render_template
+    render_template,
+    current_app
 )
+
 
 launches = Blueprint(
     'launches',
@@ -11,6 +13,8 @@ launches = Blueprint(
 
 @launches.route('/', methods=['GET'])
 def main():
-    return 'ciao'
+    launches = current_app.config['launchesAPI'].getLaunchesDetails()
+    print(launches)
+    return render_template('lastLaunch.html', missionName=launches['mission']['name'])
 
 
